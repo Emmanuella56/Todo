@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: box-sizing;
+  }
+  
+  body{
+   background: #000;
+   width: 100%;
+  }
+  
+  .nav{
+    background-color: rgb(13, 13, 19);
+    color: white;
+    padding: 10px;
+    position: sticky;
+  }
+
+  .inputs{
+    display: flex;
+    justify-content: center;
+  }
+
+  form{
+    /* height: 200px; */
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid white;
+    box-shadow: 1px 2px 2px white;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  form:hover{
+    box-shadow: 2px 3px 3px white
+  }
+
+.titleInput{
+  border: transparent;
+  border-radius: 2px;
+}
+
+.titleInput:hover{
+  background-color:whitesmoke;
+}
+
+.note{
+  border: transparent;
+  border-radius: 2px;
+}
+
+.note:hover{
+  background-color:whitesmoke;
+}
+
+
+.btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #000;
+  color: white;
+  box-shadow: 1px 2px 2px rgb(253, 253, 253);
+  border-radius: 30px;
+}
+
+.entries{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;  
+  margin: 10px;
+  border-radius: 20px;
+
+}
+
+.entry{
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid white;
+  box-shadow: 1px 2px 2px white;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.entry:hover{
+  box-shadow: 2px 3px 3px white
+}
+
+
+@media screen and (max-width: 600px) {
+  body{
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .entries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+  }
+  
+  .entry{
+    width: 150px;
+  }
+  
+}
